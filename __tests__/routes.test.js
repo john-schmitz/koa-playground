@@ -1,6 +1,7 @@
 const request = require("supertest");
-const server = require("../app.js");
 const jwt = require("jsonwebtoken");
+
+const server = require("../app.js");
 const config = require("../config");
 
 // close the server after each test
@@ -26,6 +27,6 @@ describe("Routing tests", () => {
       })
       .set("Accept", "application/json");
     expect(response.status).toEqual(201);
-    expect(jwt.verify(response.body.token, config.secret)).toBe(true);
+    expect(jwt.verify(response.body.token, config.jwtSecret)).toBe(true);
   });
 });

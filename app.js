@@ -1,5 +1,5 @@
 const Koa = require("koa");
-const router = require("./api");
+const api = require("./api");
 const config = require("./config");
 const applyMidleware = require("./util/applyMidleware");
 const middlewareList = require("./middleware");
@@ -7,8 +7,8 @@ const app = new Koa();
 
 applyMidleware(app, middlewareList);
 
-app.use(router.routes());
-app.use(router.allowedMethods());
+app.use(api.routes());
+app.use(api.allowedMethods());
 
 app.on("error", err => {
   console.log(err);
