@@ -8,6 +8,7 @@ const configs = {
     env,
     name: process.env.APP_NAME || "Default name",
     host: process.env.APP_HOST || "localhost",
+    jwtSecret: process.env.JWT_SECRET,
     port: 7070
   },
   production: {
