@@ -17,7 +17,9 @@
     "koa": "^2.8.1",
     "koa-json": "^2.0.2",
     "koa-logger": "^3.2.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.18.4"
   },
   "devDependencies": {
     "eslint": "^6.3.0",
@@ -25,6 +27,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
+    "sequelize-cli": "^5.5.1",
     "supertest": "^4.0.2"
   }
 }

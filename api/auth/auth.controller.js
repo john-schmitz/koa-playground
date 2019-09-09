@@ -1,3 +1,5 @@
 module.exports = {
-  register(ctx, next) {}
+  register(ctx, next) {
+    
+  }
 };
